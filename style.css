@@ -24,6 +24,8 @@ body {
 
 body {
     display: flex;
+    margin-inline: auto;
+    
     width: 670px;
     height: 440px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.925);
@@ -34,14 +36,14 @@ body {
     
     border-radius: 10px;
     background-color: #f5f5f5;
-    margin: 150px;
+    
 }
 
 /* Levá polovina */
 
 .zelena {
     width: 335px;
-    
+    border-radius: 10px 0 0 10px;
     background: linear-gradient(#06d7c1, #50cc49);
 }
 
@@ -120,6 +122,7 @@ h2 {
 
 .seznam {
     list-style-type: none;
+    margin: 0;
     padding: 0;
     display: flex;
     gap: 30px;
@@ -128,7 +131,13 @@ h2 {
 .velikost {
     color: #f15f42;
     border-radius: 50%;
-    border: 1px solid #f15f42;
+    border: 2px solid #f15f42;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 2em;
 }
 
 .kosik {
@@ -145,5 +154,8 @@ h2 {
     font-weight: 400;
     text-align: center;
     color: white;
-
 }
+
+.kosik:hover {
+    background-color: #e74c3c;
+} 
